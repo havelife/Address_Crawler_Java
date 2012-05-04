@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.chris.hibernate.model">
+	<class name="Url" table="url">
+		<id name="id" column="id">
+            <!-- <generator class="native"/> -->
+        </id>
+        <property name="url" column="url"></property>
+        <property name="state" column="state"></property>
+        <property name="pcity" column="pcity"></property>
+        <property name="hcity" column="hcity"></property>
+        <property name="pdistrict" column="pdistrict"></property>
+        <property name="hdistrict" column="hdistrict"></property>
+	</class>
+</hibernate-mapping>

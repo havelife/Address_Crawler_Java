@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.chris.hibernate.model">
+	<class name="Fenye" table="fenye_tblm">
+		<id name="id" column="id">
+            <!-- <generator class="native"/> -->
+        </id>
+        <property name="city" column="city"></property>
+        <property name="page" column="page"></property>
+        <property name="content" column="content"></property>
+        <property name="url" column="url"></property>
+	</class>
+</hibernate-mapping>
